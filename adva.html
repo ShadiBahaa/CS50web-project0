@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+        a{
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin: 10px;
+        }
+        table,tr,td{
+            padding: 10px;
+        }
+        .large{
+            width: 33%;
+        }
+        input{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Google search</a>
+    <h3 style="color: rgb(238, 39, 39);font-weight: normal;">Advanced Search</h3>
+    <hr>
+    <form action="https://www.google.com/search">
+        <table>
+            <tr>
+            <td colspan="2">Find pages with...</td>
+            <td>To do this in the search box.</td>
+            </tr>
+            <tr>
+                <td>all these words:</td>
+                <td class="large"><input type="text" name="as_q"></td>
+                <td>Type the important words: tri-colour rat terrier</td>
+            </tr>
+            <tr>
+                <td>this exact word or phrase:</td>
+                <td class="large"><input type="text" name="as_epq"></td>
+                <td>Put exact words in quotes: "rat terrier"</td>
+            </tr>
+            <tr>
+                <td>any of these words:</td>
+                <td class="large"><input type="text" name="as_oq"></td>
+                <td>Type OR between all the words you want: miniature OR standard</td>
+            </tr>
+            <tr>
+                <td>none of these words:</td>
+                <td class="large"><input type="text" name="as_eq" style="vertical-align:top;"></td>
+                <td>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="submit" value="Advanced search" style="background-color:blue;color: white;width: fit-content;"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
